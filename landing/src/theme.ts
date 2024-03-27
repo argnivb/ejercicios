@@ -13,7 +13,7 @@ const brandColor: MantineColorsTuple = [
   "#a87100",
 ];
 const redColor: MantineColorsTuple = [
-  "#ffeaea",
+  "#fefaf2",
   "#fbd3d3",
   "#f5a4a4",
   "#f07272",
