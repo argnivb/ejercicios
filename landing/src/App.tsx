@@ -5,6 +5,7 @@ import "@mantine/carousel/styles.css";
 import "./App.css";
 import { FeatureSection } from "./components/FeatureSection";
 import { DesignSection } from "./components/DesignSection";
+import { ShowroomSection } from "./components/ShowroomSection";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </Container>
       <Container py="xl" size="xl">
         <DesignSection />
+      </Container>
+      <Container py="xl" size="xl">
+        <ShowroomSection />
       </Container>
     </MantineProvider>
   );
