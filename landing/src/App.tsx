@@ -1,13 +1,16 @@
-import { MantineProvider, Text } from "@mantine/core";
+import { Container, MantineProvider } from "@mantine/core";
 import { theme } from "./theme";
-
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import "./App.css";
+import { FeatureSection } from "./components/FeatureSection";
 
 function App() {
   return (
     <MantineProvider theme={theme}>
-      <Text>hola</Text>
+      <Container py="xl">
+        <FeatureSection />
+      </Container>
     </MantineProvider>
   );
 }
