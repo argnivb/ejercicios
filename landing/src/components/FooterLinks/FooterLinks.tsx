@@ -68,7 +68,9 @@ export const FooterLinks = () => {
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Center className={classes.afterFooter}>
-        <Text size="sm">El Cairo @ 2024. Todos los derechos reservados</Text>
+        <Text size="sm">
+          Company Name @ 2024. Todos los derechos reservados
+        </Text>
       </Center>
     </footer>
   );
