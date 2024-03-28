@@ -10,6 +10,7 @@ export const FeatureSection = () => {
   const isDesktop = useMediaQuery(`(min-width: ${em(1028)})`);
 
   const settings = {
+    arrows: false,
     dots: !isDesktop,
     infinite: false,
     speed: 500,
