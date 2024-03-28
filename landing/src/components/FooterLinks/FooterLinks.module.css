@@ -1,0 +1,62 @@
+.footer {
+  margin-top: var(--mantine-spacing-xl);
+  background-color: #24211d;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: rem(60px);
+  padding-bottom: rem(36px);
+  gap: rem(32px);
+
+  @media (min-width: $mantine-breakpoint-md) {
+    flex-direction: row;
+  }
+}
+
+.groups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--mantine-spacing-xl);
+  width: 100%;
+
+  @media (min-width: $mantine-breakpoint-md) {
+    justify-content: space-evenly;
+  }
+}
+
+.wrapper {
+  width: 100%;
+
+  @media (min-width: $mantine-breakpoint-sm) {
+    width: fit-content;
+  }
+}
+
+.link {
+  display: block;
+  color: var(--mantine-color-white);
+  font-size: var(--mantine-font-size-md);
+  font-weight: 400;
+  padding-top: rem(6px);
+  padding-bottom: rem(6px);
+}
+
+.title {
+  font-size: var(--mantine-font-size-md);
+  font-weight: 500;
+  font-family: Greycliff CF, var(--mantine-font-family);
+  padding-top: rem(86x);
+  padding-bottom: rem(6px);
+  color: var(--mantine-color-white);
+}
+
+.afterFooter {
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+  color: var(--mantine-color-white);
+  background-color: var(--mantine-color-brand-8);
+}

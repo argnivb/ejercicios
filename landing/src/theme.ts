@@ -1,4 +1,10 @@
-import { Button, MantineColorsTuple, createTheme } from "@mantine/core";
+import {
+  Button,
+  Container,
+  MantineColorsTuple,
+  createTheme,
+  rem,
+} from "@mantine/core";
 
 const brandColor: MantineColorsTuple = [
   "#fff8e4",
@@ -25,6 +31,15 @@ const redColor: MantineColorsTuple = [
   "#a30109",
 ];
 
+const CONTAINER_SIZES: Record<string, string> = {
+  xs: rem(572),
+  sm: rem(720),
+  md: rem(960),
+  lg: rem(1140),
+  xl: rem(1320),
+  xxl: rem(1445),
+};
+
 export const theme = createTheme({
   fontFamily: "Roboto, Helvetica, Arial,sans-serif;",
   primaryColor: "brand",
@@ -37,6 +52,17 @@ export const theme = createTheme({
       defaultProps: {
         color: "brand.7",
       },
+    }),
+    Container: Container.extend({
+      vars: (_, { size, fluid }) => ({
+        root: {
+          "--container-size": fluid
+            ? "100%"
+            : size !== undefined && size in CONTAINER_SIZES
+            ? CONTAINER_SIZES[size]
+            : rem(size),
+        },
+      }),
     }),
   },
 });
