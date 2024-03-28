@@ -6,7 +6,7 @@ const arr2 = [-1, 1, 10000, "2", "3", 400, 5, 9, "bgt", "ab2", "ab1"];
 // valid number then we can compare them, if they are not valid numbers
 // then i convert them to string and procede with a string comparation
 
-const compareFunction = arr.sort((a, b) => {
+const compareFunction = (a, b) => {
   const aNum = Number(a);
   const bNum = Number(b);
 
@@ -28,14 +28,13 @@ const compareFunction = arr.sort((a, b) => {
     const bStr = String(b);
     return aStr.localeCompare(bStr);
   }
-});
+};
 
-arr.sort(compareFunction);
-arr2.sort(compareFunction);
+console.log(arr.sort(compareFunction), arr2.sort(compareFunction));
 
 // Exercise 2
 const sum = (a, b) => {
-  if (a & b) {
+  if (a && b) {
     return a + b;
   }
 
